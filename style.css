@@ -10,7 +10,7 @@ div.quick-view-description {
   border-bottom: 1px solid black;
 }
 
-h1.movie-show, h2.subheader, p.description, p.tags {
+h1.content-title, h2.subheader, p.description, p.tags, p.content-channel2, p.content-duration {
   /*padding: 0 1em;*/
   padding: 0 2.5%;
 }
@@ -30,6 +30,27 @@ h2.subheader {
 p.description {
   
 }
+
+div.content-channel1, div.service-duration {
+  width: 50%;
+}
+
+/*button.btn {
+  float: right;
+}*/
+
+div.quick-view-buttons {
+  float: right;
+}
+
+div.quick-view-more {
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  /*padding: 0 0;*/
+  margin: 1% 0 0.5% 0;
+} 
+
 
 
 
