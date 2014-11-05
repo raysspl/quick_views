@@ -6,6 +6,10 @@ body {
   margin-right: 4em;
 }
 
+p {
+  font-size: 1.25em;
+}
+
 div.quick-view-description {
   border-bottom: 1px solid black;
 }
@@ -31,8 +35,21 @@ p.description {
   
 }
 
-div.content-channel1, div.service-duration {
+div.first-half {
   width: 50%;
+
+  display: inline-block;
+}
+
+div.second-half {
+  /*width: 50%;*/
+  float: right;
+  display: inline-block;
+  margin: 2% 2% 0 0;
+}
+
+div.content-channel1, div.service-duration {
+  /*width: 50%;*/
 }
 
 /*button.btn {
@@ -40,7 +57,7 @@ div.content-channel1, div.service-duration {
 }*/
 
 div.quick-view-buttons {
-  float: right;
+  /*float: right;*/
 }
 
 div.quick-view-more {
