@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Unified Guide" content="Quick Views">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>Quickview Prototype</title>
+
+  <script type="text/javascript">
+  var modal = $('.modal');
+
+  $( ".btn" ).on( "click", function() {
+    $( modal ).toggleClass('modal-show');
+  });
+
+  $( ".overlay" ).on( "click", function() {
+    $( modal ).toggleClass('modal-show');
+  });
+
+  $( ".modal_close" ).on( "click", function() {
+    $( modal ).toggleClass('modal-show');
+  });
+  </script>
+</head>
+
+<body>
+<div class="modal">
+  <div class="overlay"></div>
+  <div class="modal_contents modal-transition">
+    <a class="modal_close" href="#">X</a>
+    <h1>Chuck</h1>
+  </div>
+</div>
+
+<div class="dib tc">
+  <h1>Chuck</h1>
+  <p>Episode Title S5, Ep1</p>
+  <!--<a class="btn" href="#">Show Modal</a>-->
+  <img class="btn" src="http://oneclicktvshows.com/wp-content/uploads/2014/06/Chuck.jpg">
+</div>
+
+<p class="credit tc">Built by <a href="http://twitter.com/raysspl">@raysspl</a></p>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
