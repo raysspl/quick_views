@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
 	<meta charset="UTF-8">
 	<meta name="Unified Guide" content="Quick Views">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="style.css" rel="stylesheet" type="text/css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<title>Quickview Prototype</title>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
 </head>
 
 <body>
@@ -19,7 +21,7 @@
     <div class="quick-view-description">
       <div class="quick-view-header"><h1 class="content-title">Chuck</h1></div>
       
-      <div class="quick-view-subheader"><h2 class="subheader">Chuck Versus the Zoom</h2></div>
+      <div class="quick-view-subheader"><h2 class="subheader">Chuck Versus the Zoom - S5, Ep1</h2></div>
       
       <div class="#"><p class="description">Chuck is an American action-comedy/spy-drama television series created by Josh Schwartz and Chris Fedak. The series is about an "average computer-whiz-next-door" named Chuck, played by Zachary Levi, who receives an encoded e-mail from an old college friend now working for the Central Intelligence Agency (CIA). The message embeds the only remaining copy of a software program containing the United States' greatest spy secrets into Chuck's brain.</p></div>
 
@@ -38,7 +40,7 @@
       <div class="content-actions">
         <div class="first-half">
           <div class="content-channel1">
-            <p class="content-channel2">HBOON</p>
+            <h3 class="content-channel2">HBOON</h3>
           </div>
           <div class="service-duration">
             <p class="content-duration">On Demand $4.99</p>
@@ -46,7 +48,8 @@
         </div>  
         <div class="second-half">
           <div class="quick-view-buttons">
-            <button class="btn">PLAY</button>
+            <!-- <button class="btn">PLAY</button> -->
+            <i class="fa fa-play-circle fa-3x"></i>
           </div>
         </div>
       </div><!-- end content-actions -->
@@ -54,7 +57,7 @@
       <div class="content-actions">
         <div class="first-half">  
           <div class="content-channel1">
-            <p class="content-channel2">HBO</p>
+            <h3 class="content-channel2">HBO</h3>
           </div>
           <div class="service-duration">
             <p class="content-duration">Tues 10-11p</p>
@@ -62,7 +65,8 @@
         </div>
         <div class="second-half">
           <div class="quick-view-buttons">
-            <button class="btn">PLAY</button>
+            <!-- <button class="btn">PLAY</button> -->
+            <i class="fa fa-play-circle fa-3x"></i>
           </div>
         </div>  
       </div><!-- end content-actions -->
@@ -70,7 +74,7 @@
       <div class="content-actions">
         <div class="first-half">
           <div class="content-channel1">
-            <p class="content-channel2">HBO</p>
+            <h3 class="content-channel2">HBO</h3>
           </div>
           <div class="service-duration">
             <p class="content-duration">Wed 10-11p</p>
@@ -78,7 +82,8 @@
         </div>
         <div class="second-half">
           <div class="quick-view-buttons">
-            <button class="btn">PLAY</button>
+            <!-- <button class="btn">PLAY</button> -->
+            <i class="fa fa-play-circle fa-3x"></i>
           </div>
         </div>
       </div><!-- end content-actions -->
@@ -86,7 +91,7 @@
       <div class="content-actions">
         <div class="first-half">
           <div class="content-channel1">
-            <p class="content-channel2">HBO</p>
+            <h3 class="content-channel2">HBO</h3>
           </div>
           <div class="service-duration">
             <p class="content-duration">Thu 10-11p</p>
@@ -94,11 +99,15 @@
         </div>
         <div class="second-half">
           <div class="quick-view-buttons">
-            <button class="btn">PLAY</button>
+            <!-- <button class="btn">PLAY</button> -->
+            <i class="fa fa-play-circle fa-3x"></i>
           </div>
         </div>
       </div><!-- end content-actions -->
 
+<!-- BEGIN 2ND MODAL CONSTRUCTION -->
+      
+      <div class="modal">
       <div class="quick-view-more"><p>3 Other Episodes</p></div>
 
       <div class="quick-view-options">
@@ -134,15 +143,19 @@
           <p>Hugh Laurie stars as the ornery Dr. Gregory House, a paradoxical physician who loathes his patients but is a genius at treating mysterious ailments.</p>
         </div>
       </div><!-- end quick-view-options -->
+      </div>
+
+<!-- END 2ND MODAL CONSTRUCTION -->
+
     </div><!-- end customer-actions -->
-  </div>
-</div>
+  </div><!-- end modal_contents -->
+</div><!-- end modal -->
 
 <div class="dib tc">
   <h1>Chuck</h1>
-  <p>Chuck Versus the Zoom S5, Ep1</p>
+  <p>Chuck Versus the Zoom - S5, Ep1</p>
   <!--<a class="btn" href="#">Show Modal</a>-->
-  <img class="btn" src="http://oneclicktvshows.com/wp-content/uploads/2014/06/Chuck.jpg">
+  <img class="homebtn" src="http://oneclicktvshows.com/wp-content/uploads/2014/06/Chuck.jpg">
   
   <!--<p class="credit tc">Built by <a href="http://twitter.com/raysspl">@raysspl</a></p>-->
 </div>
@@ -150,18 +163,18 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script type="text/javascript">
-  var modal = $('.modal');
+  var modal = $(".modal");
 
-  $( ".btn" ).on( "click", function() {
-    $( modal ).toggleClass('modal-show');
+  $(".homebtn").on("click", function() {
+    $(modal).toggleClass("modal-show");
   });
 
-  $( ".overlay" ).on( "click", function() {
-    $( modal ).toggleClass('modal-show');
+  $(".overlay").on("click", function() {
+    $(modal).toggleClass('modal-show');
   });
 
-  $( ".modal_close" ).on( "click", function() {
-    $( modal ).toggleClass('modal-show');
+  $(".modal_close").on("click", function() {
+    $(modal).toggleClass("modal-show");
   });
   </script>
 </body>

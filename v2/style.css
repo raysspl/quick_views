@@ -7,7 +7,7 @@
 html,
 body {
   width: 100%;
-}
+} 
 
 body {
   font-family: "Helvetica Neue";
@@ -35,13 +35,11 @@ a {
   left: 0;
 }
 
-.btn {
-  /*padding: 15px 20px;
-  background: #D4341A;*/
+.homebtn {
   color: #FFF;
   font-size: 1rem;
   margin: 2rem 0;
-  display: inline-block;
+  display: inline-block;ß
 }
 
 .overlay {
@@ -59,7 +57,8 @@ a {
 }
 
 .modal_contents {
-  background-color: white;
+  background-color: rgb(55, 61, 67);
+  color: rgb(243, 239, 224);
   width: 32rem;
   position: absolute;
   right: 2%;
@@ -67,6 +66,7 @@ a {
   top: 0;
   min-height: 50rem;
   /*height: 50rem;*/
+  /*margin: 1%;*/
   padding: 1%;
 }
 
@@ -78,6 +78,41 @@ a {
   display: block;
 }
 
+div.quick-view-description {
+  border-bottom: 1px solid black;
+  border-color: rgb(243, 239, 224);
+  /*background-color: rgb(55, 61, 67);*/
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.25;
+}
+
+div.first-half {
+  width: 50%;
+  display: inline-block;
+}
+
+div.second-half {
+  float: right;
+  display: inline-block;
+  margin: 2% 2% 0 0;
+}
+
+i.fa-3x {
+  margin-top: 28%;
+}
+
+div.quick-view-more {
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  /*padding: 0 0;*/
+  margin: 1% 0 0.5% 0;
+  border-color: rgb(243, 239, 224);
+} 
+
 .modal_close {
   position: absolute;
   right: 2rem;
@@ -88,6 +123,7 @@ a {
 
 .modal-show {
   visibility: visible;
+  margin: 1%;
 }
 
 .modal-transition {
@@ -109,6 +145,9 @@ a {
   opacity: 1;
 }
 
+div.customer-actions {
+  /*background-color: #151515;*/
+}
 
   
 
